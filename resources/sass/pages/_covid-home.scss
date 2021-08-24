@@ -1,0 +1,110 @@
+.covid-banner-section {
+    .covid-banner {
+        background: url("/images/home/covid-home-bg-edited.png") no-repeat
+            center;
+        background-size: cover;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .text {
+                width: 100% !important;
+                text-align: center;
+
+                h1 {
+                    font-size: 2.2rem !important;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .text {
+            h1 {
+                font-size: 3.5rem;
+                text-transform: capitalize;
+            }
+
+            p {
+                font-size: 1.1rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.covid-services {
+    padding: 100px 0;
+    background: url("/images/bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    .title {
+        text-align: center;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        color: $purple;
+        font-weight: bold;
+    }
+
+    .white-button {
+        width: 300px;
+    }
+}
+.service-card {
+    padding: 20px;
+    background: $white;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    height: 300px;
+
+    @media only screen and (max-width: 767px) {
+        .title {
+            text-align: center !important;
+        }
+
+        p {
+            text-align: center !important;
+        }
+    }
+
+    .title {
+        font-weight: 600;
+        text-align: left;
+        color: $black;
+        text-transform: initial;
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: rgb(92 6 140 / 80%);
+    }
+    p {
+        text-align: left;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+}
+
+.service-image {
+    height: calc(100% - 20px);
+    width: 100%;
+    background: url("/images/covid/service-image.jpg");
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 40px 0px 40px 40px;
+    background-size: cover;
+}
+
+.service-button {
+    margin-top: 40px;
+}
+
+@include media-breakpoint-only(xs) {
+    .service-image {
+        height: 300px;
+        margin-bottom: 20px;
+        border-radius: 40px 40px 40px 40px;
+    }
+}

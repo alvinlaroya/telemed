@@ -1,0 +1,665 @@
+// .home-slider {
+//     width: 100%;
+//     height: 600px;
+//     .slide {
+//         height: 600px;
+//         width: 100%;
+//         background: url("/images/home/Slider Image.png");
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         .container {
+//             height: 100%;
+//         }
+//         .text {
+//             color: $white;
+//             h1 {
+//                 line-height: 50px;
+//                 font-weight: 600;
+//                 font-size: 50px;
+//             }
+//         }
+//     }
+// }
+
+@import url(//db.onlinewebfonts.com/c/5c47a750b2d4cc65134ef9e6ed0cfc2d?family=DINNextRoundedLTPro-Regular);
+
+.logo-text {
+    font-weight: bold;
+}
+
+.logo-wrap {
+    font-family: "DINNextRoundedLTPro-Regular";
+}
+
+.nav-links {
+    .mobile {
+        display: none;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .mobile {
+            display: block;
+        }
+        .desktop {
+            display: none;
+        }
+    }
+}
+.home-bg {
+    background: url("/images/home/home-bg-edited.png");
+    background-position-y: -130px;
+    @media only screen and (max-width: 767px) {
+        background-position-y: 0px !important;
+        background-position-x: center;
+    }
+}
+
+.doctors-bg {
+    background-image: url("/images/home/doctor-home-bg-edited.png");
+    @media only screen and (max-width: 767px) {
+        height: 100% !important;
+        padding: 20px 10px;
+        background-position-x: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .home-cards {
+        padding: 0px !important;
+    }
+    .download-section {
+        padding-bottom: 100px;
+    }
+}
+.homepage-banner-section {
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .homepage-banner {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media only screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .text {
+                text-align: center;
+                .description {
+                    width: 100% !important;
+                }
+                h1 {
+                    font-size: 2.2rem !important;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .header-banner {
+                margin-top: 50px;
+            }
+
+            .second-header-banner {
+                margin-top: 50px;
+            }
+        }
+        hr {
+            background-color: white;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+        .text {
+            // width: 600px;
+
+            h1 {
+                font-size: 3rem;
+                text-transform: capitalize;
+            }
+            .tagline {
+                font-size: 1.1rem;
+            }
+            .description {
+                width: 500px;
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
+        }
+    }
+}
+
+.home-cards {
+    padding: 100px 0;
+    background: url("/images/bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.download-section {
+    @media only screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.doctor-benefits-section {
+    @media only screen and (max-width: 767px) {
+        .benefit {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .benefit-list {
+            h1 {
+                text-align: center;
+            }
+        }
+
+        .benefit-img {
+            margin: 10px 0px !important;
+        }
+
+        .header {
+            margin-top: 100px;
+        }
+    }
+
+    padding: 100px 0px;
+
+    h1 {
+        color: $purple;
+    }
+
+    .doctor-benefits {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .benefit {
+        margin-bottom: 50px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .benefit-img {
+            width: auto;
+            height: 200px;
+            margin-right: 50px;
+        }
+    }
+
+    .benefit-list {
+        li {
+            font-size: 1.1rem;
+        }
+    }
+
+    .benefits {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .benefit {
+            width: 100%;
+        }
+    }
+}
+
+.hospital-card {
+    min-height: 100%;
+    padding: 40px 20px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    &-img {
+        height: auto;
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    // background-size: cover !important;
+    &-consultation {
+        background-color: #afe8ea;
+    }
+    &-diagnostics {
+        background-color: #d2f7f0;
+    }
+    &-pharmacy {
+        background-color: #8ef7e2;
+    }
+
+    // &.-covid {
+    //     background: url("/images/home/Card\ Image\ 3.png") no-repeat;
+    // }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        h1 {
+            font-size: 36px !important;
+        }
+    }
+    h1 {
+        span {
+            font-weight: 400;
+        }
+        color: $purple;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    p {
+        color: #00000096;
+    }
+    .bottom {
+        padding-bottom: 20px;
+    }
+    .purple-button {
+        width: 100%;
+    }
+    .line {
+        height: 5px;
+        background-color: $white;
+        width: 30%;
+        margin-bottom: 10px;
+    }
+}
+
+.doctor-benefits-container {
+    background-image: url("/images/white-waves.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.special-services {
+    padding: 50px 0;
+    background-image: url("/images/white-waves.png");
+    background-size: cover;
+    background-position: bottom;
+
+    .my-hospital {
+        font-size: 2em;
+        text-align: center;
+        background-color: #58bccb;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        margin-left: 10px;
+        text-transform: uppercase;
+        color: $purple;
+        font-weight: bold;
+    }
+
+    a {
+        color: $white;
+
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .-my-covid-care {
+            height: 140vw !important;
+            margin-bottom: 50px;
+        }
+
+        .middle {
+            p {
+                margin-top: 100px;
+            }
+        }
+    }
+    // ipad
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        .-my-covid-care {
+            height: 44% !important;
+        }
+
+        .middle {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .-my-covid-care {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("/images/home/my-covid-care.jpg");
+    }
+    .middle {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 50px;
+        height: 350px;
+    }
+}
+.mission-section {
+    padding: 0;
+    margin: 0;
+
+    .mission-text {
+        background: url("/images/bg.jpg") no-repeat;
+        background-size: cover;
+
+        height: 500px;
+        .text {
+            max-width: 400px;
+            font-family: $primary-font;
+            color: $purple;
+            margin-left: 10px;
+            @include media-breakpoint-up(sm) {
+                margin-left: 20%;
+            }
+        }
+        p {
+            font-style: italic;
+        }
+    }
+
+    .mission-image {
+        height: 500px;
+        background: url("/images/home/mission\ image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@include media-breakpoint-only(xs) {
+    .home-slider {
+        height: 350px;
+        .slide {
+            height: 350px;
+        }
+    }
+
+    .hospital-card {
+        margin-bottom: 20px;
+    }
+
+    .mission-text {
+        padding: 0;
+        align-items: center;
+    }
+}
+
+.login-section {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    background: url("/images/bg.jpg");
+    background-size: contain;
+
+    .card-body {
+        padding: 60px 0px;
+    }
+}
+
+.book-doctor-section {
+    background: url("/images/bg.jpg");
+    background-size: contain;
+}
+
+.doctor-profile-section {
+    background: url("/images/bg.jpg");
+    background-size: contain;
+    height: 75vh;
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
+.doctor-card-info {
+    background: $white;
+}
+
+.treatment-section {
+    padding-top: 100px;
+    background: url(/images/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    // mobile
+    @include media-breakpoint-only(xs) {
+        .container {
+            height: 220vh !important;
+        }
+    }
+
+    // ipad
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        .spacer {
+            display: none;
+        }
+        .row {
+            height: 120% !important;
+            margin-bottom: -600px;
+        }
+        .middle {
+            display: block !important;
+        }
+
+        .middle {
+            p {
+                padding-bottom: 0px !important;
+            }
+        }
+
+        .covid-card .middle p {
+            padding-top: 150px;
+        }
+        .heart-card .middle p {
+            padding-top: 120px;
+        }
+        .mental-card,
+        .wellness-card .middle p {
+            padding-top: 150px;
+        }
+    }
+
+    .row {
+        height: 75vh;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .middle {
+        height: 100%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            color: $white;
+            font-size: 1.2em;
+        }
+    }
+
+    .header {
+        color: $purple;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    .covid-card {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("/images/home/my-covid-care.jpg");
+
+        .middle {
+            p {
+                padding-bottom: 150px;
+            }
+        }
+    }
+    .heart-card {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("/images/home/my-heart.jpg");
+
+        .middle {
+            p {
+                padding-bottom: 100px;
+            }
+        }
+    }
+    .mental-card {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("/images/home/my-mental-health.jpg");
+
+        .middle {
+            p {
+                padding-bottom: 160px;
+            }
+        }
+    }
+    .wellness-card {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("/images/home/my-wellness.jpg");
+
+        .middle {
+            p {
+                padding-bottom: 160px;
+            }
+        }
+    }
+}
+
+.why-choose-section {
+    padding: 150px 0px;
+    background-image: url("/images/white-waves.png");
+    background-size: cover;
+    background-position: bottom;
+
+    .title {
+        color: $purple;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        border-radius: 5px;
+        padding: 40px 30px;
+        height: 100%;
+        background-color: #cfebe9;
+        font-size: 1.2em;
+        letter-spacing: 0.3px;
+
+        img {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.what-is-telemed {
+    min-height: 100vh;
+    background-image: url("/images/doctor-section.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 50px;
+        color: $purple;
+    }
+    .description {
+        font-size: 1.2em;
+        line-height: 1.9;
+    }
+}
+
+.doctor-cards {
+    .text {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h1 {
+            margin-bottom: 20px;
+            color: $purple;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.doctor-why-choose {
+    padding: 100px 0px;
+    background-image: url("/images/white-waves.png");
+    background-size: cover;
+    background-position: bottom;
+
+    .card {
+        background: #cfebe9;
+        padding: 40px;
+        min-height: 100%;
+        h1 {
+            margin-bottom: 20px;
+            color: $purple;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.7;
+        }
+    }
+}
+
+.why-choose-myhospital {
+    background: url(/images/bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    background-position: bottom;
+
+    h1 {
+        text-transform: uppercase;
+        color: $purple;
+        margin-bottom: 50px;
+    }
+
+    p {
+        line-height: 1.7;
+        font-size: 1.1em;
+    }
+}

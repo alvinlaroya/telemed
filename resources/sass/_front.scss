@@ -1,0 +1,284 @@
+body.front-body {
+    padding-bottom: 100px;
+    @media (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+footer.front {
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: absolute;
+    right: 0;
+}
+
+.list-title {
+    padding-right: 5px;
+}
+
+.button-wrapper {
+    text-align: right;
+    button {
+        min-width: 120px;
+    }
+}
+
+.covid19-screening,
+.hadPneumonia,
+.question-4-6,
+.screening-4-6,
+.negCovidRTPCR,
+.posRapidTest,
+.question-7-11,
+.screening-7-11,
+.hasNoSymp,
+.posCovidRTPCR {
+    display: none;
+}
+
+.covid19-screening,
+.screening-4-6,
+.screening-7-11 {
+    margin-top: 10px;
+}
+
+.book-details-page {
+    padding: 30px 0;
+    @media (min-width: 760px) {
+        padding: 45px 0;
+    }
+    @media (min-width: 992px) {
+        padding: 60px 0;
+    }
+    @media (min-width: 1200px) {
+        padding: 120px 0;
+    }
+    .no-booking-found {
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .btn-paynow {
+        min-width: 150px;
+    }
+}
+.select2-container .select2-selection--single {
+    border-color: #ced4da;
+    height: 37px;
+}
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 37px;
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+    height: 37px;
+}
+
+.success-text {
+    color: #155724;
+}
+
+.alert {
+    p {
+        margin-bottom: 5px !important;
+    }
+}
+
+label {
+    &.required {
+        position: relative;
+        &::after {
+            content: "*";
+            color: red;
+            padding-left: 5px;
+        }
+    }
+}
+
+.list-group-item {
+    &.custom-active {
+        z-index: 2;
+        color: #fff;
+        background-color: #010d6f;
+        border-color: #010d6f;
+    }
+}
+
+.list-group-item {
+    &.c-item {
+        background-color: #e5e6e8;
+    }
+}
+
+span.note {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    color: red;
+}
+
+.displayIDNo,
+.seniorPwdID,
+.seniorPwdIDBack {
+    display: none;
+}
+
+.summary-box {
+    border: 1px solid #dee2e6;
+    .head-wrap {
+        background-color: #f1f1f1;
+        padding: 15px;
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+    .body-wrap {
+        padding: 0 30px;
+    }
+}
+
+.price {
+    margin-bottom: 5px;
+    &.disabled {
+        text-decoration: line-through;
+    }
+}
+
+// .ccf {
+//   label {
+//     h5 {
+//       font-size: 17px;
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+
+// .display-centerservice {
+//   display: none;
+// }
+
+.badge {
+    border-radius: 5px;
+    font-size: 11px;
+    line-height: 1;
+    margin-left: 5px;
+    padding: 3px 5px;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.approved {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.cancelled {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+span.center-title {
+    margin-bottom: 10px;
+    width: 100%;
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        width: 50%;
+    }
+}
+
+span.center-date {
+    width: 100%;
+    @media (min-width: 768px) {
+        padding-left: 5px;
+        width: 60%;
+    }
+}
+
+.default-content {
+    p {
+        text-align: justify;
+    }
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.cookiealert {
+    position: fixed;
+    bottom: initial;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0;
+    transform: translateY(-100%);
+    transition: all 500ms ease-out;
+    color: #ecf0f1;
+    background: #212327;
+}
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+
+span.list-title {
+    font-weight: bold;
+}
+
+.error-page {
+    height: 75vh;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    h1 {
+        @media (min-width: 992px) {
+            font-size: 60px;
+        }
+    }
+}
+
+.assist-text {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.popUpNotif {
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+#multiNotes {
+    display: none;
+}
+
+.basicForms span.multi-notes {
+    color: red;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}

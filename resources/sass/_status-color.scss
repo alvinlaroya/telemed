@@ -1,0 +1,65 @@
+.price {
+  text-align: right;
+}
+
+.badge {
+  font-size: 14px;
+  padding: 5px 8px;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  vertical-align: bottom;
+}
+
+.pending {
+    color: #6a7784;
+    background-color: #e1e7ed;
+    border: 1px solid #b5c1cc;
+}
+
+.approved {
+    color: #0979f1;
+    background-color: #deeaf7;
+    border: 1px solid #78b0eb;
+}
+
+.paid {
+  color: #058621;
+  background-color: #cdefd4;
+  border: 1px solid #8cc097;
+}
+
+.confirmed {
+    color: #0e8c2b;
+    background-color: #d0f3d8;
+    border: 1px solid #75d089;
+}
+
+.completed {
+  color: #4617b8;
+  background-color: #ded3f9;
+  border: 1px solid #b19be9;
+}
+
+.cancelled {
+  color: #e33f4f;
+  background-color: #f7d4d7;
+  border: 1px solid #f9a0a9;
+}
+
+.expired {
+  color: #ab8207;
+  background-color: #f5efde;
+  border: 1px solid #d2c499;
+}
+
+.onhold {
+  color: #ab8207;
+  background-color: #f5efde;
+  border: 1px solid #d2c499;
+}
+
+.service-class {
+  .select2 {
+    display: block !important;
+  }
+}

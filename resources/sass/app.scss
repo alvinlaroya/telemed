@@ -1,0 +1,124 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import 'global';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import 'custom-front';
+@import 'front';
+@import 'screening';
+
+// PAGES
+@import './pages/home';
+@import './pages/covid-home';
+
+.invalid-fb {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #e3342f;
+}
+.valid-fb {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #38c172;
+}
+
+body {
+  background: #f3f3f9;
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.text-d-blue {
+  color: $purple;
+}
+
+.main {
+  min-height: 320px;
+}
+.alphas .page-link {
+  color: #fff;
+  background-color: #474b76;
+}
+.alphas .page-link.active,
+.alphas .page-link:hover {
+  background-color: #2b2e55;
+}
+.alphas .reset {
+  background-color: #6e6f7c;
+}
+.alphas .reset:hover {
+  background-color: #585965;
+}
+.steps {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.steps .step {
+  color: $purple;
+  margin: auto;
+  padding: 8px 45px;
+  border: 1px solid #ddd;
+}
+.step:not(.active) {
+  color: #4f5478;
+  border-color: #b2b5ca;
+}
+.step.active {
+  border-color: $purple;
+}
+// .steps .step + .step {
+//   margin-left: 15px;
+// }
+.step > i {
+  margin-left: 4px;
+}
+
+.steps {
+  border-top: 1px solid #b2b5ca;
+  margin: 0 10px;
+  @media (min-width: 768px) {
+    border-top: 0;
+  }
+  .step {
+    border-top-width: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    @media (min-width: 768px) {
+      border-top-width: 1px;
+      margin: 8px;
+      width: auto;
+    }
+    &.active {
+      background-color: $purple;
+      color: #fff;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .doctor-card {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  .container-lg {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .doctor-card {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+}

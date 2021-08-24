@@ -1,0 +1,292 @@
+@media screen {
+  // Custom Calendar
+  .customCalendar {
+    position: relative;
+    &:not(.noShadow) {
+      background-color: #fff;
+      border-radius: 4px;
+      // box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+    }
+    .fc-toolbar {
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      &.fc-header-toolbar {
+        margin: 0;
+        padding: 10px 15px;
+        h2 {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      .fc-button {
+        background-color: $purple;
+        border: 0;
+        &.fc-button-active {
+          background-color: $darkRed;
+        }
+        &:hover,
+        &:focus {
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+    .fc-unthemed {
+      .fc-row {
+        border-color: #dadce0;
+      }
+      td {
+        border-color: #dadce0;
+        &.fc-today {
+          background-color: rgba(45, 170, 225, 0.1);
+          .fc-day-number {
+            background-color: $blue;
+            color: #fff;
+          }
+        }
+      }
+      .fc-popover {
+        &.fc-more-popover {
+          box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+          border-radius: 4px;
+          .fc-header {
+            .fc-title {
+              color: $darkBlue;
+              font-family: 'Roboto';
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .fc-dayGrid-view {
+      .fc-day-number {
+        color: #3c4043;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: 500;
+        height: 24px;
+        margin: 8px 8px 0 0;
+        min-width: 24px;
+        &:hover {
+          background-color: #f1f3f4;
+        }
+      }
+    }
+    .fc-event {
+      background-color: $blue;
+      border-color: $blue;
+      color: #fff;
+      font-family: 'Roboto';
+      font-size: 12px;
+      font-weight: 500;
+      // height: 22px;
+      // line-height: 22px;
+      padding: 0 8px;
+      // position: relative;
+      &:after {
+        content: '';
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.3s ease;
+        width: 100%;
+      }
+      &:hover {
+        color: #fff;
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+    .fc-time-grid,
+    .fc-day-grid {
+      .fc-axis {
+        span {
+          color: #70757a;
+          font-family: 'Roboto';
+          font-weight: normal;
+          font-size: 10px;
+          -webkit-font-smoothing: subpixel-antialiased;
+        }
+      }
+    }
+    .fc-time-grid {
+      .fc-slats {
+        td {
+          height: 2.5em;
+        }
+      }
+    }
+    a.fc-more {
+      color: $darkBlue;
+      font-family: 'Roboto';
+      font-weight: bold;
+    }
+  }
+
+  .eventDialog {
+    .MuiInputBase-input[name='title'] {
+      font-size: 18px;
+      font-weight: normal;
+      &::-webkit-input-placeholder {
+        color: #70757a;
+        opacity: 1;
+      }
+      &::-moz-placeholder {
+        color: #70757a;
+        opacity: 1;
+      }
+      &:-ms-input-placeholder {
+        color: #70757a;
+        opacity: 1;
+      }
+      &:-moz-placeholder {
+        color: #70757a;
+        opacity: 1;
+      }
+    }
+  }
+
+  .eventPopup {
+    .MuiListItemText-secondary {
+      color: rgba(0, 0, 0, 0.87);
+      small {
+        font-size: 11px;
+      }
+    }
+  }
+
+  // Custom Color Pickers
+  .customColorPickers {
+    margin: 10px 0 0;
+    .MuiFab-root {
+      &.customColorPicker {
+        box-shadow: none;
+        color: #fff;
+        height: 25px;
+        margin-right: 8px;
+        min-height: 100%;
+        width: 25px;
+        &:focus {
+          outline: none;
+        }
+        &.lightBlue {
+          background-color: $blue;
+        }
+        &.darkPurple {
+          background-color: $darkBlue;
+        }
+        &.orange {
+          background-color: $orange;
+        }
+        &.pink {
+          background-color: $darkRed;
+        }
+      }
+    }
+  }
+
+  .eventModal {
+    .close {
+      &:focus {
+        outline: none;
+      }
+    }
+    .modal.fade .modal-dialog {
+      opacity: 0;
+      -webkit-transform: scale(0.1);
+      -ms-transform: scale(0.1);
+      -o-transform: scale(0.1);
+      transform: scale(0.1);
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    .modal.fade.in .modal-dialog {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+      -o-transform: translate3d(0%, 0, 0);
+      transform: translate3d(0%, 0, 0);
+    }
+    .modal-content {
+      border: none;
+      border-radius: 2px;
+      -webkit-box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22), 0 27px 24px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22), 0 27px 24px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22), 0 27px 24px rgba(0, 0, 0, 0.2);
+    }
+    .modal-header {
+      min-height: 16px;
+      padding: 1rem 24px 0 !important;
+      border-bottom: none;
+    }
+    .modal-title {
+      font-weight: 500;
+      font-size: 21px;
+    }
+    .modal-body {
+      padding: 0 24px;
+      i {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+    .modal-body p {
+      font-weight: 400;
+      font-size: 14px;
+      color: #212121;
+    }
+    .modal-body .lead {
+      font-weight: 300;
+      font-size: 16px;
+      color: #757575;
+    }
+    .modal-body p:last-child,
+    .modal-body .lead:last-child {
+      margin-bottom: 0;
+    }
+    .modal-footer {
+      margin-top: 24px;
+      padding: 8px 0;
+      border-top: none;
+    }
+    .modal-footer .btn {
+      height: 36px;
+      margin-right: 8px;
+      padding: 8px 10px;
+      border: none;
+      border-radius: 0;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $blue;
+      background-color: #fff;
+    }
+    .modal-footer .btn:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    .modal-footer .btn:focus,
+    .modal-footer .btn:hover {
+      color: $darkBlue;
+    }
+    .modal-footer .btn + .btn {
+      margin-left: 0;
+    }
+    .modal-footer .btn + .btn:last-child {
+      margin-left: -4px;
+    }
+  }
+}

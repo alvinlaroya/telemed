@@ -1,0 +1,317 @@
+@media screen {
+    body {
+        font-family: $primary-font;
+    }
+    .breadcrumb {
+        margin: 20px 0;
+        li,
+        .breadcrumb-item {
+            font-weight: 600;
+        }
+    }
+
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        color: $darkBlue;
+        font-weight: 600;
+    }
+
+    .toast {
+        &.customToast {
+            position: fixed;
+            top: 75px;
+            right: 22px;
+            z-index: 999;
+            .toast-body {
+                line-height: 1.2;
+                padding-left: 50px;
+                &:before {
+                    content: "\f05a";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    position: absolute;
+                    color: rgba(255, 255, 255, 0.6);
+                    top: 0;
+                    bottom: 0;
+                    height: 30px;
+                    left: 14px;
+                    font-size: 25px;
+                    margin: auto 0;
+                }
+            }
+            &.success {
+                background-color: #38c172;
+                border-color: #38c172;
+                color: #fff;
+                .toast-body {
+                    &:before {
+                        content: "\f058";
+                    }
+                }
+            }
+            &.error {
+                background-color: #e3342f;
+                border-color: #e3342f;
+                color: #fff;
+                .toast-body {
+                    &:before {
+                        content: "\f06a";
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        .navbar-brand {
+            .logo {
+                display: block;
+                margin: 0 auto;
+                max-width: 120px;
+            }
+        }
+    }
+    .sidebar {
+        .nav {
+            padding-top: 17px;
+            .nav-item {
+                &.children {
+                    position: relative;
+                    z-index: 1;
+                    &:after {
+                        content: "\f13a";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        position: absolute;
+                        top: 8px;
+                        right: 15px;
+                    }
+                }
+                &:hover {
+                    color: #fff;
+                }
+                .nav-link {
+                    font-weight: 300;
+                    transition: all 0.3s ease;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    i {
+                        width: 30px;
+                    }
+                }
+                ul.sub-menu {
+                    background-color: #f1f1f1;
+                    display: none;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    z-index: 3;
+                    .nav-link {
+                        padding-left: 34px;
+                        i {
+                            width: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-link {
+            &:hover,
+            &.active {
+                background-color: $purple;
+                color: $white !important;
+            }
+        }
+    }
+
+    .notificationIcon {
+        &:after {
+            display: none;
+        }
+        .count {
+            background-color: $red;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            top: 0;
+            right: -15px;
+            &:empty {
+                display: none;
+            }
+        }
+    }
+
+    .notificationDropdown {
+        padding-top: 0;
+        min-width: 300px;
+        .heading {
+            background-color: #f2f2f2;
+            color: #010a55;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 10px;
+            h6 {
+                font-size: 15px;
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+        .body {
+            height: auto;
+            max-height: 350px;
+            padding-top: 8px;
+            overflow: auto;
+        }
+        .dropdown-divider {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .page-header {
+        .btn {
+            background-color: $blue;
+            color: #fff;
+            font-weight: 600;
+            min-width: 180px;
+            padding: 10px 15px;
+        }
+    }
+
+    .table .thead-dark th {
+        background-color: $blue !important;
+        border: 0;
+    }
+
+    .sidebar {
+        .nav {
+            .nav-item {
+                .nav-link {
+                    font-weight: 300;
+                    i {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .customCardHeader {
+        background-color: $purple;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    // Select2 Fixed
+    select.is-invalid {
+        & + .select2-container {
+            .select2-selection--single,
+            .select2-selection--multiple {
+                border-color: #e3342f;
+            }
+        }
+    }
+    select.select2-hidden {
+        & + .select2-container {
+            width: 100% !important;
+        }
+    }
+    .select2-container {
+        .select2-selection--single {
+            border-color: #ced4da;
+            height: 37px;
+            .select2-selection__rendered {
+                line-height: 37px;
+            }
+            .select2-selection__arrow {
+                height: 37px;
+            }
+        }
+    }
+
+    .form-group {
+        &.is-invalid {
+            .bootstrap-tagsinput {
+                border-color: #e3342f;
+            }
+        }
+    }
+
+    .ck-editor__main {
+        & > .ck-editor__editable {
+            min-height: 250px !important;
+        }
+    }
+
+    #cameraModal,
+    #cropModal {
+        .modal-lg {
+            max-width: 642px !important;
+        }
+        .modal-body {
+            padding: 0;
+        }
+    }
+    #imageprev {
+        display: block;
+        max-width: 100%;
+    }
+    .image-preview {
+        height: 235px;
+        width: 235px;
+        margin-bottom: 16px;
+        position: relative;
+        z-index: 1;
+        &.loading {
+            &:after {
+                background-image: url(img/generating.gif);
+                content: "";
+                display: block;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
+    table.audit-log-table {
+        tbody {
+            tr {
+                &.bg {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+.btn-primary {
+    background: $purple;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $primary-font;
+}

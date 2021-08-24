@@ -1,0 +1,209 @@
+body {
+    background: $white;
+    font-family: $primary-font;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primary-font;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+// SLIDER
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $purple;
+}
+
+.owl-dots .disabled {
+    display: none;
+}
+
+.owl-nav .disabled {
+    display: none;
+}
+
+// HEADER
+header {
+    width: 100%;
+    background: $white;
+    box-shadow: 0px 3px 6px #00000029;
+    height: 100px;
+    position: absolute;
+    .container {
+        height: 100%;
+    }
+    .logo {
+        img {
+            height: 75px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+        }
+        .text {
+            margin-left: 10px;
+            h1 {
+                display: inline-block;
+                color: #55a039;
+                font: normal normal bold 40px/85px Times New Roman;
+                letter-spacing: 0px;
+                color: #55a039;
+                text-transform: uppercase;
+            }
+            h2 {
+                display: inline-block;
+                font: normal normal bold 30px/63px Times New Roman;
+                letter-spacing: 0px;
+                color: #5c068c;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .nav-links {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin-left: 20px;
+                a {
+                    font-family: $primary-font;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $purple;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+// FOOTER
+footer {
+    padding: 60px;
+    background-color: $purple;
+    a {
+        color: $white;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.footer-nav {
+    p {
+        font: normal normal bold 10px/12px Arial;
+        text-transform: uppercase;
+    }
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: $white;
+            font-family: $primary-font;
+        }
+    }
+}
+
+.btn-primary {
+    border-radius: 4px !important;
+    font-family: $primary-font;
+    font-size: 12px !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white !important;
+    background: $purple !important;
+}
+
+.btn-outline-primary {
+    border-radius: 4px !important;
+    font-family: $primary-font;
+    font-size: 12px !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: $purple !important;
+    background: $white !important;
+    border-color: $purple !important;
+}
+
+section#main {
+    padding-top: 100px;
+}
+
+// BUTTONS
+.purple-button {
+    border-radius: 4px;
+    font-family: $primary-font;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: $purple;
+    background: $white;
+    display: block;
+}
+
+.white-button {
+    border-radius: 4px;
+    font-family: $primary-font;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: $white;
+    background: $purple;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid $purple;
+    font-weight: 600;
+    &.-lg {
+        height: 58px;
+        padding: 0;
+        line-height: 54px;
+        font-size: 16px;
+        font-weight: 600px;
+    }
+    &:hover {
+        background: $white;
+        color: $purple;
+        border: 2px solid $purple;
+        text-decoration: none;
+    }
+}
+
+#app {
+    padding: 50px 0;
+}
